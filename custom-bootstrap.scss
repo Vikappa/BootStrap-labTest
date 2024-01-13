@@ -1,1 +1,51 @@
+@import "scss/functions";
+@import "scss/variables";
+@import "scss/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,600&family=Pixelify+Sans:wght@400;700&display=swap');
+
+
+$custom-colors: (
+    "primary": white,
+    "secondary": #ffffffcc,
+    "success": #84EAE3,
+    "black": black,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    background: url('/assets/background.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 10vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import './scss/bootstrap.scss'

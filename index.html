@@ -4,30 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg" href="./assets/bootstrap-logo.svg">
+    <link rel="icon" type="image/svg" href="./assets/bootStrap LabTest.png">
 
     <meta name="description" content="Laboratorio su BootStrap">
     <meta name="author" content="Vincenzo Costantini">
 
     <meta property="og:title" content="BootStrap labtest">
-    <meta property="og:description" content="Esperimenti di modifica e modifica dinamica di bootstrap">
-    <meta property="og:image"
-        content="https://raw.githubusercontent.com/Vikappa/BootStrap-labTest/f33c2f41ddc11593d73a927527f456afd303bea6/assets/bootstrap-logo.svg">
+    <meta property="og:description"
+        content="Esperimenti di modifica e modifica dinamica di bootstrap ed elementi del dom">
+    <meta property="og:image" content="">
     <meta property="og:url" content="https://vikappa.github.io/BootStrap-labTest/">
     <meta property="og:type" content="website">
 
-    <meta name="twitter:card"
-        content="https://raw.githubusercontent.com/Vikappa/BootStrap-labTest/f33c2f41ddc11593d73a927527f456afd303bea6/assets/bootstrap-logo.svg">
+    <meta name="twitter:card" content="">
     <meta name="twitter:title" content="BootStrap labTest">
-    <meta name="twitter:description" content="Esperimenti di modifica e modifica dinamica di bootstrap">
-    <meta name="twitter:image"
-        content="https://raw.githubusercontent.com/Vikappa/BootStrap-labTest/f33c2f41ddc11593d73a927527f456afd303bea6/assets/bootstrap-logo.svg">
+    <meta name="twitter:description"
+        content="Esperimenti di modifica e modifica dinamica di bootstrap ed elementi del dom">
+    <meta name="twitter:image" content="">
+
+    <link rel="stylesheet" href="./custom-bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <title>BootStrap labTest</title>
 </head>
 
-<body>
+<body class="col col-10 mx-auto p-0 rounded-2">
+
+    <nav class="navbar navbar-expand-lg bg-primary col-8 position-fixed top-0 start-0 w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/bootStrap LabTest.png" height="48px">
+            </a>
+
+            <!-- Dropdown Trigger -->
+            <div class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Indice esperimenti
+                </a>
+
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="container mx-auto">
+
+        <div class="row flex-column flex-lg-row p-0 p-md-5 m-0 mt-5 ">
+
+            <div class="col col-5 col-lg-3 my-3 my-lg-5 mx-auto p-0">
+                <img src="./assets/bootStrap LabTest header.png" class="img-fluid">
+            </div>
+
+            <div class="col col-12 col-lg-9 offset offset-4 m-0 p-2" style="font-family: 'Pixelify Sans', sans-serif;">
+                <p class="lh-1 ">In questo laboratorio voglio provare a creare delle funzioni che iniettano dei valori
+                    direttamente
+                    dentro
+                    le variabili del file .css della pagina.
+                </p>
+                <p class="lh-1 ">Il primo esperimento è una serie di caselle per modificare le variabili principali
+                    della
+                    pagina,
+                    come
+                    i colori del tema principale di bootstrap importandolo da scss/_variables.scss
+                </p>
+                <p class="lh-1 ">Il secondo esperimento è un blocco con immagine "rigida" e position absolute con cui
+                    puoi giocare
+                    in tempo reale con le classi
+                </p>
+            </div>
+        </div>
+
+        <div class="row"></div>
+
+    </main>
 
 
+    <script src="./script_modifiche_dom.js"></script>
     <script src="./scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
